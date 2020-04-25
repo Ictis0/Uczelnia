@@ -10,6 +10,7 @@
 
 float Global_counter;
 HANDLE mutex;
+
 struct Dane {
 
     float* tablica;
