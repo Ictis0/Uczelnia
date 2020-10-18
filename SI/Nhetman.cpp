@@ -132,7 +132,7 @@ void BFS(int rozmiar, bool szybko = true)
 
         if(szybko)
             noweStany = Separacja(badanyStan);
-        else
+        else //wolmo
             noweStany = BruteForce(badanyStan);
 
         for (int* var : noweStany)
@@ -173,7 +173,7 @@ void DFS(int rozmiar, bool szybko = true)
 
         if (szybko)
             noweStany = Separacja(badanyStan);
-        else
+        else //wolmo
             noweStany = BruteForce(badanyStan);
 
         for (int* var : noweStany)
@@ -193,5 +193,5 @@ void DFS(int rozmiar, bool szybko = true)
 
 int main()
 {
-    DFS(20);
+    DFS(7);
 }
