@@ -51,11 +51,11 @@ void pokaz(int* hetmani, bool matrix = false)
 
 bool dodajHetmana(int x, int y, int* hetmani)
 {
-    if (hetmani[x] == -1)//wiersz
+    if (hetmani[x] == -1)//kolumna
     {
         for (int i = 0; i < rozmiar; i++)
         {
-            if (y == hetmani[i])//kolumna
+            if (hetmani[i] == y)//wiersz
                 return false;
 
             if (hetmani[i] != -1)//skosy
